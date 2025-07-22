@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Order.uk</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous"> -->
+</head>
+
+<body class="mx-14">
+  <!-- topbar -->
+  <section class="topbar">
+    <div class="flex justify-between items-center bg-gray-50 px-4 h-14 text-sm">
+      <p class="text-gray-800 whitespace-nowrap">
+        🌟 Get 5% Off your first order,
+        <span class="text-orange-500 font-semibold">Promo: ORDER5</span>
+      </p>
+
+      <div class="flex items-center space-x-1 text-gray-800">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-black" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 10c4.418 0 8-3.582 8-8S16.418 5 12 5 4 8.582 4 13s3.582 8 8 8z" />
+        </svg>
+        <span>Regent Street, A4, A4201, London</span>
+        <a href="#" class="text-orange-500 hover:underline ml-2">Change Location</a>
+      </div>
+
+      <div class="flex items-center h-14 bg-green-700 text-white rounded-md overflow-hidden">
+        <div class="flex items-center px-3 border-r border-green-600">
+          <img src="/images/Full Shopping Basket.png" alt="Basket" class="h-7 w-4 mr-1" />
+          <span>23 Items</span>
+        </div>
+        <div class="px-3 border-r border-green-600">
+          GBP 79.89
+        </div>
+        <div class="px-2">
+          <img src="/images/Forward Button.png" alt="Forward" class="h-4 w-4" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NAVBAR -->
+  <section class="navbar bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-4 flex items-center justify-between py-4">
+
+      <!-- Logo and Title -->
+      <div class="flex items-center space-x-2">
+        <img src="/images/LOGO 1.png" alt="Cart Icon" class="h-10 w-auto">
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="hidden lg:flex items-center space-x-6">
+        <li>
+          <a href="#"
+            class="px-5 py-2 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-colors duration-300">Home</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300">Browse
+            Menu</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300">Special
+            Offers</a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300">Restaurants</a>
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300">Track
+            Order</a>
+        </li>
+      </ul>
+
+      <!-- Login Button -->
+      <button
+        class="ml-4 flex items-center space-x-2 px-6 py-2 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-700 transition-colors duration-300">
+        <span>Login/Signup</span>
+      </button>
+    </nav>
+  </section>
+
+
+  <!-- herosection -->
+  <section class="herosection">
+    <div class="relative min-h-screen bg-gray-100 flex items-center justify-center py-10 overflow-hidden">
+      <div
+        class="relative w-full max-w-7xl bg-white rounded-3xl shadow-xl flex flex-col lg:flex-row p-8 lg:p-12 items-center justify-between overflow-hidden">
+
+        <div class="flex-1 lg:pr-12 text-center lg:text-left z-10">
+          <p class="text-lg text-gray-700 mb-2">Order Restaurant food, takeaway and groceries.</p>
+          <h2 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            <span class="text-gray-900 block">Feast Your Senses,</span>
+            <span class="text-orange-500 block">Fast and Fresh</span>
+          </h2>
+          <p class="text-gray-600 mb-4">Enter a postcode to see what we deliver</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" placeholder="e.g. EC4R 3TE"
+              class="flex-1 px-5 py-3 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent transition-all duration-300">
+            <button
+              class="px-8 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-colors duration-300 shadow-md">Search</button>
+          </div>
+        </div>
+
+        <div class="relative flex-1 flex justify-center items-center mt-8 lg:mt-0 z-10">
+          <img src="/images/girl eating.png" alt="Girl eating pizza"
+            class="relative right-40 w-full lg:max-w-none lg:w-auto h-auto max-h-[600px] object-contain">
+
+          <div
+            class="absolute inset-y-0 right-0 w-3/5 bg-orange-500 rounded-l-full transform translate-x-1/2 -rotate-12 origin-left scale-150 hidden lg:block">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="p-8 min-h-screen">
+    <!-- Exclusivedeals -->
+    <div class="mb-12">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-gray-800">Up to -40% <span class="text-orange-500">Order.uk exclusive
+            deals</span></h2>
+        <div class="flex space-x-4">
+          <span class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-200 cursor-pointer">Vegan</span>
+          <span class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-200 cursor-pointer">Sushi</span>
+          <span class="bg-orange-500 text-white px-4 py-2 rounded-full cursor-pointer">Pizza & Fast food</span>
+          <span class="text-gray-600 px-4 py-2 rounded-full hover:bg-gray-200 cursor-pointer">others</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/images/Rectangle 8.png" alt="Chef Burgers London" class="w-full h-48 object-cover">
+          <div class="absolute top-4 right-4 bg-gray-800 text-white text-sm font-bold px-3 py-1 rounded-full">-40%</div>
+          <div class="p-4">
+            <p class="text-xs text-gray-500 mb-1">Restaurant</p>
+            <h3 class="text-lg font-semibold text-gray-900">Chef Burgers London</h3>
+          </div>
+        </div>
+        <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/images/Rectangle 9.png" alt="Grand Al Ai London" class="w-full h-48 object-cover">
+          <div class="absolute top-4 right-4 bg-gray-800 text-white text-sm font-bold px-3 py-1 rounded-full">-20%</div>
+          <div class="p-4">
+            <p class="text-xs text-gray-500 mb-1">Restaurant</p>
+            <h3 class="text-lg font-semibold text-gray-900">Grand Al Ai London</h3>
+          </div>
+        </div>
+        <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
+          <img src="/images/Rectangle 10.png" alt="Butterbot Cafe London" class="w-full h-48 object-cover">
+          <div class="absolute top-4 right-4 bg-gray-800 text-white text-sm font-bold px-3 py-1 rounded-full">-17%</div>
+          <div class="p-4">
+            <p class="text-xs text-gray-500 mb-1">Restaurant</p>
+            <h3 class="text-lg font-semibold text-gray-900">Butterbot Cafe London</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Popular Categories -->
+    <div class="mb-12">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">Order.uk Popular Categories 😋</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div class="flex flex-col items-center bg-white rounded-xl shadow-lg p-4 text-center">
+          <img src="/images/Rectangle 13.png" alt="Burgers & Fast food"
+            class="w-24 h-24 object-cover rounded-full mb-3">
+          <h3 class="text-sm font-semibold text-gray-900">Burgers & Fast food</h3>
+          <p class="text-xs text-gray-500">23 Restaurants</p>
+        </div>
+        <div class="flex flex-col items-center bg-white rounded-xl shadow-lg p-4 text-center">
+          <img src="/images/Rectangle 15.png" alt="Salads" class="w-24 h-24 object-cover rounded-full mb-3">
+          <h3 class="text-sm font-semibold text-gray-900">Salads</h3>
+          <p class="text-xs text-gray-500">12 Restaurants</p>
+        </div>
+        <div class="flex flex-col items-center bg-white rounded-xl shadow-lg p-4 text-center">
+          <img src="/images/Rectangle 17.png" alt="Pasta & Casuals" class="w-24 h-24 object-cover rounded-full mb-3">
+          <h3 class="text-sm font-semibold text-gray-900">Pasta & Casuals</h3>
+          <p class="text-xs text-gray-500">4 Restaurants</p>
+        </div>
+        <div class="flex flex-col items-center bg-white rounded-xl shadow-lg p-4 text-center">
+          <img src="/images/Rectangle 19.png" alt="Pizza" class="w-24 h-24 object-cover rounded-full mb-3">
+          <h3 class="text-sm font-semibold text-gray-900">Pizza</h3>
+          <p class="text-xs text-gray-500">32 Restaurants</p>
+        </div>
+        <div class="flex flex-col items-center bg-white rounded-xl shadow-lg p-4 text-center">
+          <img src="/images/Rectangle 21.png" alt="Breakfast" class="w-24 h-24 object-cover rounded-full mb-3">
+          <h3 class="text-sm font-semibold text-gray-900">Breakfast</h3>
+          <p class="text-xs text-gray-500">4 Restaurants</p>
+        </div>
+        <div class="flex flex-col items-center bg-white rounded-xl shadow-lg p-4 text-center">
+          <img src="/images/Rectangle 23.png" alt="Soups" class="w-24 h-24 object-cover rounded-full mb-3">
+          <h3 class="text-sm font-semibold text-gray-900">Soups</h3>
+          <p class="text-xs text-gray-500">37 Restaurants</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular Restaurants -->
+    <div>
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">Popular Restaurants</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div class="bg-white rounded-xl  overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+          <img src="/images/mcD.png" alt="McDonald's London" class="w-full h-24 object-contain p-4">
+          <div class="bg-red-600 text-white text-center py-2 text-sm font-semibold">McDonald's London</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+          <img src="/images/papa.png" alt="Papa Johns" class="w-full h-24 object-contain p-4">
+          <div class="bg-green-600 text-white text-center py-2 text-sm font-semibold">Papa Johns</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+          <img src="/images/kfc.png" alt="KFC West London" class="w-full h-24 object-contain p-4">
+          <div class="bg-red-700 text-white text-center py-2 text-sm font-semibold">KFC West London</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+          <img src="/images/texas.png" alt="Texas Chicken" class="w-full h-24 object-contain p-4">
+          <div class="bg-orange-500 text-white text-center py-2 text-sm font-semibold">Texas Chicken</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+          <img src="/images/burger.png" alt="Burger King" class="w-full h-24 object-contain p-4">
+          <div class="bg-yellow-500 text-gray-900 text-center py-2 text-sm font-semibold">Burger King</div>
+        </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+          <img src="/images/shaurma.png" alt="Shaourma 1" class="w-full h-24 object-contain p-4">
+          <div class="bg-blue-600 text-white text-center py-2 text-sm font-semibold">Shaourma 1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER  -->
+  <footer class="bg-gray-100 text-gray-800">
+    <div class="max-w-7xl mx-auto px-4 py-10 flex justify-between  md:grid-cols-4 gap-8">
+
+      <div>
+        <h1 class="text-3xl font-bold flex items-center">
+          Order<span class="ml-1 bg-gray-900 text-white px-1 rounded">UK</span>
+        </h1>
+        <div class="flex mt-4 space-x-2">
+          <img src="/images/appstore.png" alt="App Store" class="h-10" />
+          <img src="/images/playstore.png" alt="Google Play" class="h-10" />
+        </div>
+        <p class="text-sm mt-3">
+          Company # 490039-445, Registered with<br />
+          House of companies.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-semibold text-lg mb-2">Get Exclusive Deals in your Inbox</h2>
+        <div class="flex items-center bg-white rounded-full shadow-sm overflow-hidden">
+          <input type="email" placeholder="youremail@gmail.com" class="flex-1 px-4 py-2 text-sm outline-none" />
+          <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full">
+            Subscribe
+          </button>
+        </div>
+        <p class="text-xs mt-2 text-gray-500">
+          we won't spam, read our <a href="#" class="underline">email policy</a>
+        </p>
+
+        <div class="flex space-x-4 mt-4 text-xl">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-snapchat"></i></a>
+        </div>
+      </div>
+
+
+      <div>
+        <h3 class="text-black font-semibold mb-3">Legal Pages</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="text-black hover:underline">Terms and conditions</a></li>
+          <li><a href="#" class="text-black hover:underline">Privacy</a></li>
+          <li><a href="#" class="text-black hover:underline">Cookies</a></li>
+          <li><a href="#" class="text-black hover:underline">Modern Slavery Statement</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3">Important Links</h3>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="text-black hover:underline">Get help</a></li>
+          <li><a href="#" class="text-black hover:underline">Add your restaurant</a></li>
+          <li><a href="#" class="text-black hover:underline">Sign up to deliver</a></li>
+          <li><a href="#" class="text-black hover:underline">Create a business account</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 text-white text-sm py-4">
+      <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+        <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+        <div class="space-x-4">
+          <a href="#" class="text-white hover:underline">Privacy Policy</a>
+          <a href="#" class="text-white hover:underline">Terms</a>
+          <a href="#" class="text-white hover:underline">Pricing</a>
+          <a href="#" class="text-white hover:underline">Do not sell or share my personal information</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
