@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order.Uk</title>
+    <link href="./output.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <section class="navbar bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 flex items-center justify-between py-4">
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <img src="/images/LOGO 1.png" alt="Cart Icon" class="h-10 w-auto">
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="lg:hidden">
+                <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Nav Links -->
+            <ul id="menu"
+                class="hidden absolute top-16 left-0 w-full bg-white lg:static lg:flex lg:flex-row lg:items-center lg:space-x-6 px-4 lg:px-0 py-4 lg:py-0 shadow-md lg:shadow-none z-50 flex-col space-y-4 lg:space-y-0">
+                <li>
+                    <a href="./index.html"
+                        class="px-5 py-2 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-colors duration-300 block text-center">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300 block text-center">Browse
+                        Menu</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300 block text-center">Special
+                        Offers</a>
+                </li>
+                <li>
+                    <a href="./Restaurant.html"
+                        class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300 block text-center">Restaurants</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="text-gray-700 hover:text-orange-500 font-semibold transition-colors duration-300 block text-center">Track
+                        Order</a>
+                </li>
+
+                <!-- Login Button inside dropdown on mobile -->
+                <li class="lg:hidden">
+                    <button
+                        class="w-full px-6 py-2 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-700 transition-colors duration-300">
+                        Login/Signup
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Login Button on large screen -->
+            <button
+                class="hidden lg:flex items-center space-x-2 px-6 py-2 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-700 transition-colors duration-300">
+                <span>Login/Signup</span>
+            </button>
+        </nav>
+    </section>
+
+    <script>
+        const toggleBtn = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        toggleBtn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+    <section class="order mx-6">
+        <!-- Header -->
+        <div class="text-sm text-gray-700 mb-2">Order from Tandoori Pizza London</div>
+
+        <!-- Menu Button -->
+        <div class="flex items-center justify-between bg-white rounded-lg shadow p-3 mb-4">
+            <div class="flex items-center gap-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <span class="font-semibold">Menu</span>
+            </div>
+            <button class="text-sm text-gray-500">Pizzas</button>
+        </div>
+
+        <!-- Title & Sort -->
+        <div class="flex items-center justify-between mb-2">
+            <h2 class="text-xl font-bold">Pizzas</h2>
+            <button class="text-sm bg-gray-200 px-3 py-1 rounded-full">Sort by Pricing</button>
+        </div>
+
+        <!-- Pizza Cards -->
+        <div class="space-y-4">
+
+            <!-- Pizza Card -->
+            <div class="bg-white rounded-xl shadow p-4">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg">Farm House Xtreme Pizza</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger,<br />
+                            3 medium sized French Fries, 3 cold drinks
+                        </p>
+                    </div>
+                    <img src="/images/pizza.png" alt="Pizza" class="w-14 h-14 rounded-full object-cover">
+                </div>
+
+                <!-- Price Buttons -->
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <button class="bg-indigo-900 text-white text-sm px-4 py-1 rounded">Small <span
+                            class="ml-2">£21.90</span></button>
+                    <button class="bg-green-500 text-white text-sm px-4 py-1 rounded">Medium <span
+                            class="ml-2">£25.90</span></button>
+                    <button class="bg-green-100 text-green-800 text-sm px-4 py-1 rounded">Large <span
+                            class="ml-2">£27.90</span></button>
+                    <button class="bg-green-100 text-green-800 text-sm px-4 py-1 rounded border">XL Large with Sauces
+                        <span class="ml-2">£32.90</span></button>
+                </div>
+            </div>
+            <!-- Pizza Card -->
+            <div class="bg-white rounded-xl shadow p-4">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg">Farm House Xtreme Pizza</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger,<br />
+                            3 medium sized French Fries, 3 cold drinks
+                        </p>
+                    </div>
+                    <img src="/images/pizza.png" alt="Pizza" class="w-14 h-14 rounded-full object-cover">
+                </div>
+
+                <!-- Price Buttons -->
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <button class="bg-indigo-900 text-white text-sm px-4 py-1 rounded">Small <span
+                            class="ml-2">£21.90</span></button>
+                    <button class="bg-green-500 text-white text-sm px-4 py-1 rounded">Medium <span
+                            class="ml-2">£25.90</span></button>
+                    <button class="bg-green-100 text-green-800 text-sm px-4 py-1 rounded">Large <span
+                            class="ml-2">£27.90</span></button>
+                    <button class="bg-green-100 text-green-800 text-sm px-4 py-1 rounded border">XL Large with Sauces
+                        <span class="ml-2">£32.90</span></button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow p-4">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <h3 class="font-semibold text-lg">Farm House Xtreme Pizza</h3>
+                        <p class="text-sm text-gray-600 mb-3">
+                            1 McChicken™, 1 Big Mac™, 1 Royal Cheeseburger,<br />
+                            3 medium sized French Fries, 3 cold drinks
+                        </p>
+                    </div>
+                    <img src="/images/pizza.png" alt="Pizza" class="w-14 h-14 rounded-full object-cover">
+                </div>
+
+                <div class="flex flex-wrap gap-2 mt-3">
+                    <button class="bg-indigo-900 text-white text-sm px-4 py-1 rounded">Small <span
+                            class="ml-2">£21.90</span></button>
+                    <button class="bg-green-500 text-white text-sm px-4 py-1 rounded">Medium <span
+                            class="ml-2">£25.90</span></button>
+                    <button class="bg-green-100 text-green-800 text-sm px-4 py-1 rounded">Large <span
+                            class="ml-2">£27.90</span></button>
+                    <button class="bg-green-100 text-green-800 text-sm px-4 py-1 rounded border">XL Large with Sauces
+                        <span class="ml-2">£32.90</span></button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="mx-6">
+        <h2 class="text-2xl mt-7 font-bold text-gray-800 mb-6">Similar Restaurants</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div
+                class="bg-white rounded-xl  overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <img src="/images/mcD.png" alt="McDonald's London" class="w-full h-24 object-contain p-4">
+                <div class="bg-red-600 text-white text-center py-2 text-sm font-semibold">McDonald's London</div>
+            </div>
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <img src="/images/papa.png" alt="Papa Johns" class="w-full h-24 object-contain p-4">
+                <div class="bg-green-600 text-white text-center py-2 text-sm font-semibold">Papa Johns</div>
+            </div>
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <img src="/images/kfc.png" alt="KFC West London" class="w-full h-24 object-contain p-4">
+                <div class="bg-red-700 text-white text-center py-2 text-sm font-semibold">KFC West London</div>
+            </div>
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <img src="/images/texas.png" alt="Texas Chicken" class="w-full h-24 object-contain p-4">
+                <div class="bg-orange-500 text-white text-center py-2 text-sm font-semibold">Texas Chicken</div>
+            </div>
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <img src="/images/burger.png" alt="Burger King" class="w-full h-24 object-contain p-4">
+                <div class="bg-yellow-500 text-gray-900 text-center py-2 text-sm font-semibold">Burger King</div>
+            </div>
+            <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <img src="/images/shaurma.png" alt="Shaourma 1" class="w-full h-24 object-contain p-4">
+                <div class="bg-blue-600 text-white text-center py-2 text-sm font-semibold">Shaourma 1</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- FOOTER  -->
+    <footer class="bg-gray-100 text-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-10 grid gap-10 sm:grid-cols-2 md:grid-cols-4">
+
+            <!-- Logo & App Store -->
+            <div>
+                <h1 class="text-3xl font-bold flex items-center">
+                    Order<span class="ml-1 bg-gray-900 text-white px-1 rounded">UK</span>
+                </h1>
+                <div class="flex mt-4 space-x-2">
+                    <img src="/images/appstore.png" alt="App Store" class="h-10" />
+                    <img src="/images/playstore.png" alt="Google Play" class="h-10" />
+                </div>
+                <p class="text-sm mt-3">
+                    Company # 490039-445, Registered with<br />
+                    House of companies.
+                </p>
+            </div>
+
+            <!-- Subscribe -->
+            <div>
+                <h2 class="font-semibold text-lg mb-2">Get Exclusive Deals in your Inbox</h2>
+                <div class="flex items-center bg-white rounded-full shadow-sm overflow-hidden">
+                    <input type="email" placeholder="youremail@gmail.com"
+                        class="flex-1 px-4 py-2 text-sm outline-none" />
+                    <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="text-xs mt-2 text-gray-500">
+                    we won't spam, read our <a href="#" class="underline">email policy</a>
+                </p>
+                <div class="flex space-x-4 mt-4 text-xl">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                </div>
+            </div>
+
+            <!-- Legal Pages -->
+            <div>
+                <h3 class="text-black font-semibold mb-3">Legal Pages</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#" class="text-black hover:underline">Terms and conditions</a></li>
+                    <li><a href="#" class="text-black hover:underline">Privacy</a></li>
+                    <li><a href="#" class="text-black hover:underline">Cookies</a></li>
+                    <li><a href="#" class="text-black hover:underline">Modern Slavery Statement</a></li>
+                </ul>
+            </div>
+
+            <!-- Important Links -->
+            <div>
+                <h3 class="font-semibold mb-3">Important Links</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#" class="text-black hover:underline">Get help</a></li>
+                    <li><a href="#" class="text-black hover:underline">Add your restaurant</a></li>
+                    <li><a href="#" class="text-black hover:underline">Sign up to deliver</a></li>
+                    <li><a href="#" class="text-black hover:underline">Create a business account</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="bg-gray-900 text-white text-sm py-4">
+            <div
+                class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+                <p>Order.uk Copyright 2024, All Rights Reserved.</p>
+                <div class="space-x-4 text-center">
+                    <a href="#" class="text-white hover:underline">Privacy Policy</a>
+                    <a href="#" class="text-white hover:underline">Terms</a>
+                    <a href="#" class="text-white hover:underline">Pricing</a>
+                    <a href="#" class="text-white hover:underline">Do not sell or share my personal information</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
